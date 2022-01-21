@@ -12,21 +12,21 @@ const projects = [
         id: 2,
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque quisquam tempora doloribus, sequi sed voluptatibus molestias culpa mollitia inventore impedit illo, consectetur aliquid id asperiores dicta, pariatur amet tempore.",
-        imgSrc: "../public/assets/project1.jpg",
+        imgSrc: "project1.jpg",
         buttonText: "More",
     },
     {
         id: 3,
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque quisquam tempora doloribus, sequi sed voluptatibus molestias culpa mollitia inventore impedit illo, consectetur aliquid id asperiores dicta, pariatur amet tempore.",
-        imgSrc: "../public/assets/project2.jpg",
+        imgSrc: "project2.jpg",
         buttonText: "More",
     },
     {
         id: 4,
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque quisquam tempora doloribus, sequi sed voluptatibus molestias culpa mollitia inventore impedit illo, consectetur aliquid id asperiores dicta, pariatur amet tempore.",
-        imgSrc: "../public/assets/project3.jpg",
+        imgSrc: "project3.jpg",
         buttonText: "More",
     },
     {
@@ -39,7 +39,7 @@ const projects = [
         id: 6,
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque quisquam tempora doloribus, sequi sed voluptatibus molestias culpa mollitia inventore impedit illo, consectetur aliquid id asperiores dicta, pariatur amet tempore.",
-        imgSrc: "../public/assets/furniture.jpg",
+        imgSrc: "furniture.jpg",
         buttonText: "More",
         heading: "Furniture",
     },
@@ -47,7 +47,7 @@ const projects = [
         id: 7,
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque quisquam tempora doloribus, sequi sed voluptatibus molestias culpa mollitia inventore impedit illo, consectetur aliquid id asperiores dicta, pariatur amet tempore.",
-        imgSrc: "../public/assets/interior.jpg",
+        imgSrc: "interior.jpg",
         buttonText: "More",
         heading: "Interior Design",
     },
@@ -55,7 +55,7 @@ const projects = [
         id: 8,
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque quisquam tempora doloribus, sequi sed voluptatibus molestias culpa mollitia inventore impedit illo, consectetur aliquid id asperiores dicta, pariatur amet tempore.",
-        imgSrc: "../public/assets/project_management.png",
+        imgSrc: "project_management.png",
         buttonText: "More",
         heading: "Project Management",
     },
@@ -75,11 +75,10 @@ function Section() {
                         {item.imgSrc && (
                             <div className="relative w-full h-48 my-4 md:mb-2 lg:my-0">
                                 <Image
-                                    src={item.imgSrc}
+                                    src={`/../public/assets/${item.imgSrc}`}
                                     layout="fill"
                                     position="absolute"
                                     objectFit="contain"
-                                    priority="true"
                                 />
                             </div>
                         )}
