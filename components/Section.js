@@ -75,7 +75,7 @@ function Section() {
                         {item.imgSrc && (
                             <div className="relative w-full h-48 my-4 md:mb-2 lg:my-0">
                                 <Image
-                                    src={`/../public/assets/${item.imgSrc}`}
+                                    src={`/assets/${item.imgSrc}`}
                                     layout="fill"
                                     position="absolute"
                                     objectFit="contain"
